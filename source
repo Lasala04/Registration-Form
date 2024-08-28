@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 300px;
+            margin: 0 auto;
+            background-color: #ADD8E6;
+            padding: 20px;
+            border: 1px solid #000;
+        }
+        h2 {
+            text-align: center;
+            color: red;
+            background-color: #FFFFE0;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #000;
+        }
+        input[type="text"], input[type="password"], textarea {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #000;
+        }
+        input[type="file"] {
+            margin-bottom: 10px;
+        }
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+        select {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #000;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+        .buttons input {
+            padding: 5px 10px;
+            border: 1px solid #000;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Registration Form</h2>
+    <form>
+        <label for="name">Enter Name</label>
+        <input type="text" id="name" name="name">
+
+        <label for="password">Enter Password</label>
+        <input type="password" id="password" name="password">
+
+        <label for="address">Enter Address</label>
+        <textarea id="address" name="address" rows="4"></textarea>
+
+        <label>Select Game</label><br>
+        <input type="checkbox" id="hockey" name="game" value="Hockey">
+        <label for="hockey">Hockey</label><br>
+        <input type="checkbox" id="football" name="game" value="Football">
+        <label for="football">Football</br>
+        <input type="checkbox" id="badminton" name="game" value="Badminton">
+        <label for="badminton">Badminton</label><br>
+        <input type="checkbox" id="cricket" name="game" value="Cricket">
+        <label for="cricket">Cricket</label><br>
+        <input type="checkbox" id="volleyball" name="game" value="Volleyball">
+        <label for="volleyball">Volleyball</label><br><br>
+
+        <label>Gender</label><br>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label><br><br>
+
+        <label for="age">Select your age</label>
+        <select id="age" name="age">
+            <option value="">Select</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+        </select>
+
+        <label for="photo">Select Photo</label>
+        <input type="file" id="photo" name="photo"><br><br>
+
+        <div class="buttons">
+            <input type="button" value="Click Me">
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit Form">
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
+    
